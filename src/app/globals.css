@@ -35,6 +35,15 @@ body {
 	}
 }
 
+@keyframes flashFade {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .flicker {
 	animation: flicker 0.1s infinite;
 }

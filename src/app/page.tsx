@@ -5,7 +5,6 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
 	const [isCrazy, setIsCrazy] = useState(false);
-	const [flashOpacity, setFlashOpacity] = useState(0);
 	const [typedText, setTypedText] = useState("");
 	const sfxRef = useRef<HTMLAudioElement | null>(null);
 	const fullText =
@@ -347,23 +346,11 @@ export default function Home() {
 					<button
 						onClick={async () => {
 							setIsCrazy(true);
-							setFlashOpacity(1);
 
 							if (sfxRef.current) {
 								sfxRef.current.currentTime = 0;
 								await sfxRef.current.play();
 							}
-
-							const fade = () => {
-								setFlashOpacity((prev) => {
-									if (prev > 0) {
-										setTimeout(fade, 500);
-										return Math.max(0, prev - 0.00516);
-									}
-									return 0;
-								});
-							};
-							fade();
 						}}
 						className="bg-gradient-to-r from-stone-400 to-stone-600 text-white font-bold py-4 px-8 rounded-full text-xl hover:from-stone-500 hover:to-stone-700 transition duration-300 transform hover:scale-105 cursor-pointer"
 					>
@@ -424,10 +411,13 @@ export default function Home() {
 					</div>
 				</div>
 			)}
-			<div
-				className="fixed inset-0 bg-white z-50 pointer-events-none"
-				style={{ opacity: flashOpacity }}
-			/>
+
+			{isCrazy && (
+				<div
+					className="fixed inset-0 bg-white z-50 pointer-events-none"
+					style={{ animation: "flashFade 5000ms ease-out forwards" }}
+				/>
+			)}
 		</>
 	);
 }
