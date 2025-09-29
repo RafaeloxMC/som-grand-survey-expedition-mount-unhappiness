@@ -36,7 +36,7 @@ export default function Home() {
 		<>
 			<audio
 				ref={sfxRef}
-				src={"/sfx.mp3"}
+				src={"sfx.mp3"}
 				className="hidden w-0 h-0"
 				autoPlay={false}
 				preload="true"
@@ -75,7 +75,7 @@ export default function Home() {
 						<div className="grid grid-cols-2 gap-4">
 							<div className="relative w-full aspect-[9/16] rounded-lg overflow-hidden flex flex-col">
 								<Image
-									src="/mount_unhappiness.jpg"
+									src="mount_unhappiness.jpg"
 									alt="Collage 1"
 									fill
 									className="object-cover"
@@ -90,7 +90,7 @@ export default function Home() {
 							</div>
 							<div className="relative w-full aspect-[9/16] rounded-lg overflow-hidden flex flex-col">
 								<Image
-									src="/mount_unhappiness2.jpg"
+									src="mount_unhappiness2.jpg"
 									alt="Collage 2"
 									fill
 									className="object-cover"
