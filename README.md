@@ -20,4 +20,5 @@ Want to try it out locally?
 git clone https://github.com/RafaeloxMC/som-grand-survey-expedition-mount-unhappiness.git
 cd som-grand-survey-expedition-mount-unhappiness
 npm install
-npm run dev```
+npm run dev
+```
