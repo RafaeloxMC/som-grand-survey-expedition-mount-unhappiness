@@ -3,6 +3,7 @@
 A short trip. No promises.
 
 Visit: https://summer.hackclub.com/s?scene=84 (soon)
+
 Currently: https://rafaeloxmc.github.io/som-grand-survey-expedition-mount-unhappiness
 
 Look, if you must. The mountain will remember you...
