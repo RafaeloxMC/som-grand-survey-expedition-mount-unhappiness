@@ -8,7 +8,7 @@ Currently: https://rafaeloxmc.github.io/som-grand-survey-expedition-mount-unhapp
 
 Look, if you must. The mountain will remember you...
 
-This site is a simple tourism homepage for mount happiness!
+This site is a simple tourism homepage for Mount Unhappiness!
 Made for: Hackclub - Summer Of Making Grand Survey Expedition (Scene 84)
 
 -   The experience lives in [`Home`](src/app/page.tsx) — [src/app/page.tsx](src/app/page.tsx)
